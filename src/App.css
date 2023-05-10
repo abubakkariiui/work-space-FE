@@ -1,0 +1,240 @@
+.App {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #2b2424;
+}
+
+/* Nav.js */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 9vh;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  margin-bottom: 50px;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-logo {
+  min-height: 3vh;
+  height: 3vh;
+  width: auto;
+  display: block;
+}
+
+.nav-link {
+  color: #2b2424;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.nav-link:hover {
+  color: #bf63e1;
+}
+
+/* Home.js */
+.Home-Div {
+  margin-top: 200px;
+  display: inline-block;
+}
+
+.title-logo {
+  min-height: 10vh;
+  max-height: 20vh;
+  width: auto;
+}
+
+/* Employee.js / Tas */
+.add-btn {
+  padding: 16px 33px 16px 33px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #bf63e1;
+  color: white;
+  transition: 0.2s;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.add-btn:hover {
+  background-color: #d387ef;
+  cursor: pointer;
+}
+
+table {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 8px 10px 8px 10px;
+  color: #2b2424;
+  font-weight: 500;
+}
+
+thead {
+  color: #7b7a7a;
+}
+
+th {
+  font-weight: 300;
+  padding: 8px 10px 8px 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.task-table td {
+  padding: 15px 12px 15px 12px;
+}
+
+.task-table {
+  width: 75%;
+}
+.e-list {
+  text-transform: uppercase;
+}
+
+/* Action Buttons */
+.view-employee-btn,
+.delete-employee-btn,
+.edit-employee-btn {
+  padding: 3px 8px 3px 8px;
+  font-weight: 500;
+  margin: 5px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1.5px;
+  transition: 0.1s;
+  font-size: 16px;
+}
+
+.edit-employee-btn {
+  border-color: #3f9ab8;
+  color: #3f9ab8;
+}
+
+.view-employee-btn {
+  border-color: #bf63e1;
+  color: #bf63e1;
+}
+
+.delete-employee-btn {
+  border-color: #ff5c5c;
+  color: #ff5c5c;
+}
+
+.edit-employee-btn:hover {
+  cursor: pointer;
+  border: none;
+  color: #ededed;
+  background-color: #3f9ab8;
+}
+
+.view-employee-btn:hover {
+  cursor: pointer;
+  border: none;
+  color: #ededed;
+  background-color: #bf63e1;
+}
+
+.delete-employee-btn:hover {
+  cursor: pointer;
+  border: none;
+  color: #ededed;
+  background-color: #ff5c5c;
+}
+
+/* AddEmployee.js */
+.card-body {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  margin: 20px 0px 10px 0px;
+  font-size: 15px;
+  color: #2b2424;
+  font-size: 20px;
+}
+
+.form-label {
+  font-weight: 800;
+  margin-right: 16px;
+}
+
+.form-control {
+  font-size: 18px;
+  font-weight: 200;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 10px;
+}
+
+.form-control:focus {
+  border-color: #bf63e1;
+  box-shadow: 0px 0px 3px 2px rgba(191, 99, 225, 0.3);
+}
+
+.submit-form-btn {
+  margin-bottom: 20px;
+  padding: 16px 33px 16px 33px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #bf63e1;
+  color: white;
+  transition: 0.2s;
+}
+
+.submit-form-btn:hover {
+  cursor: pointer;
+  background-color: #d387ef;
+}
+
+/* AddTask.js */
+.form-control {
+  font-size: 18px;
+  font-weight: 200;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: #bf63e1;
+  box-shadow: 0px 0px 3px 2px rgba(191, 99, 225, 0.3);
+}
+
+.option-control {
+  height: 4vh;
+  width: 7rem;
+  font-size: 18px;
+}
+
+.checkbox-control {
+  transform: scale(1.3);
+}
