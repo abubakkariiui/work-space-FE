@@ -51,14 +51,16 @@ function deleteEmployee(id) {
 
 // task api reqests
 
-function getTask() {
-    return axios.get(baseUrl + '/api/task/getTask')
-        .then(response => response.data)
-        .catch(error => {
+function getTask(offset = 0, limit = 10) {
+    return axios
+        .get(`${baseUrl}/api/task/getTask?offset=${offset}&limit=${limit}`)
+        .then((response) => response.data)
+        .catch((error) => {
             console.error(error);
             throw error;
         });
 }
+
 
 function createTask(taskData) {
     return axios.post(baseUrl + '/api/task/addTask', taskData)
