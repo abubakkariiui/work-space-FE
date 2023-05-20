@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:5000'
+const baseUrl = 'https://empolyee-ms.herokuapp.com'
 
 function getEmployee() {
     return axios.get(baseUrl + '/api/employee/getEmployee')
